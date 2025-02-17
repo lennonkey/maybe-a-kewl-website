@@ -62,19 +62,19 @@ section {
 }
 
 .mod-item p, .modpack-item p {
-    margin: 0.625rem 0; /* 10px */
+    margin: 0.625 0; /* 10px */
     color: #ccc; /* Light gray for descriptions */
 }
 
 .mod-item a, .modpack-item a {
     display: inline-block;
-    padding: 0.625rem 0.9375rem; /* 10px 15px */
+    padding: 0.625 0.9375; /* 10px 15px */
     background-color: #3b8526; /* Minecraft grass green */
     color: #fff;
     text-decoration: none;
-    border-radius: 0.25rem; /* 4px */
-    border: 0.125rem solid #2a5c1e; /* Darker green border */
-    text-shadow: 0.0625rem 0.0625rem 0 #000; /* 1px */
+    border-radius: 0.25; /* 4px */
+    border: 0.125 solid #2a5c1e; /* Darker green border */
+    text-shadow: 0.0625 0.0625 0 #000; /* 1px */
     transition: background-color 0.2s;
 }
 
@@ -86,21 +86,21 @@ footer {
     background-color: #3b8526; /* Minecraft grass green */
     color: #fff;
     text-align: center;
-    padding: 0.625rem; /* 10px */
+    padding: 0.625; /* 10px */
     position: fixed;
     bottom: 0;
-    width: 100%;
-    border-top: 0.25rem solid #2a5c1e; /* Darker green border */
+    width: 100;
+    border-top: 0.25 solid #2a5c1e; /* Darker green border */
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+ (max-width: 768) {
     .mod-item, .modpack-item {
-        width: calc(50% - 1.25rem); /* Two columns on smaller screens */
+        width: (50 - 1.25); /* Two columns on smaller screens */
     }
 }
 
-@media (max-width: 480px) {
+ (max-width: 480px) {
     .mod-item, .modpack-item {
         width: 100%; /* Single column on mobile */
     }
