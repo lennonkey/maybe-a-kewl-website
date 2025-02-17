@@ -53,16 +53,17 @@ h2 {
 
 section {
     padding: 20px;
+    margin-bottom: 40px; /* Add space between sections */
 }
 
 /* Gallery Section */
-.gallery-grid {
+.gallery-grid, .cats-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.gallery-item {
+.gallery-item, .cat-item {
     flex: 1 1 calc(50% - 20px); /* Two columns */
     background-color: #2d2d2d; /* Dark gray background */
     border: 4px solid #555; /* Gray border */
@@ -71,15 +72,21 @@ section {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.gallery-item:hover {
+.gallery-item:hover, .cat-item:hover {
     transform: translate(-4px, -4px);
     box-shadow: 8px 8px 0 #000;
 }
 
-.gallery-item img {
+.gallery-item img, .cat-item img {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.cat-item p {
+    padding: 10px;
+    text-align: center;
+    color: #ccc; /* Light gray for descriptions */
 }
 
 /* Mods and Modpacks Section */
@@ -136,9 +143,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     border-top: 4px solid #1e3a1a; /* Darker green border */
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    position: relative; /* Change to relative for scrolling */
+    margin-top: 40px; /* Add space above footer */
 }
